@@ -34,9 +34,7 @@ body {
   color: #323339;
   cursor: pointer
 }
-
 /* -- END NAVBAR -- */
-
 
 
 /* -- WELCOME -- */
@@ -114,11 +112,9 @@ body {
   transition: 1s;
 }
 
-
 .card-text {
   margin: 0;
 }
-
 /* -- END CARDS -- */
 
 
@@ -148,7 +144,6 @@ body {
   text-align: center;
   font-size: 1.2rem;
 }
-
 /* -- END CARRITO DE COMPRAS -- */
 
 
@@ -169,6 +164,26 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.offcanvas-body {
+  color: #467A55;
+}
+
+.btnOffcanvasPagar {
+  background: #467A55;
+  border: none;
+  color: #FDF8E3;
+  transition: 1s;
+  margin: 0;
+  padding: 8px;
+}
+
+.btnOffcanvasPagar:hover {
+  background: #FDF8E3;
+  border: 1px solid #467A55;
+  color: #467A55;
+  transition: 1s;
+}
 /* -- END OFF CANVAS -- */
 
 
@@ -176,6 +191,18 @@ body {
 .footerWeb {
   background-color: #DCE0DA!important;
   margin-top: 35px;
+}
+
+.footerSection {
+  margin-top: 10px;
+  color: #323339;
+}
+
+.textCopy {
+  color: #323339;
+}
+.textCopy a {
+  text-decoration: none;
 }
 
 /* -- END FOOTER -- */

@@ -15,7 +15,7 @@ function agregarCarrito(idBuscado) {
 
   Swal.fire({
     title: 'Producto agregado',
-    text: `${productoAgregado.nombre} ha sido agregado`,
+    text: `${productoAgregado.nombre}`,
     icon: 'success',
     confirmButtonText: "OK",
     confirmButtonColor: "#A197AD",
@@ -35,8 +35,6 @@ function agregarCarrito(idBuscado) {
 let botonVaciarCarrito = document.getElementById(`vaciarCarrito`)
 
 function vaciar() {
-  //arrayCarrito.splice(0, arrayCarrito.length)
-  //localStorage.removeItem('carritoCompras')
   arrayCarrito = []
   localStorage.setItem('carritoCompras', JSON.stringify(arrayCarrito))
 
@@ -72,9 +70,6 @@ function listaProductos() {
     innerMostrarProductos.innerHTML = `
       <i onclick="funcionDelete(${articulos.id})" class="fas fa-trash-alt trashCheckout"></i> ${articulos.nombre} $${articulos.precio}
     `
-/*     innerMostrarProductos.innerHTML = `
-      <li class="list-group-item listCheckout"><i onclick="funcionDelete(${articulos.id})" class="fas fa-trash-alt trashCheckout"></i> ${articulos.nombre} $${articulos.precio} </li>
-    ` */
     mostrarProductos.appendChild(innerMostrarProductos)
   }
 }
@@ -118,7 +113,7 @@ function mostrarSubtotalPago() {
       <p class="fw-bold">Total con IVA</p>
       <p class="fw-bold"><span class="fas fa-dollar-sign"></span>${subtotal}</p>
     </div>
-    <div onclick="pagar()" class="btn btn-primary mt-2">PAGAR<span class="fas fa-dollar-sign px-1"></span>${subtotal}</div>
+    <div onclick="pagar()" class="btn btnOffcanvasPagar mt-2">PAGAR<span class="fas fa-dollar-sign px-1"></span>${subtotal}</div>
 `
 }
 
@@ -159,7 +154,7 @@ function pagar() {
       title: 'El número de la tarjeta no es válido',
       icon: 'error',
       confirmButtonText: "OK",
-      confirmButtonColor: "light purple",
+      confirmButtonColor: "red",
       timer: 2500,
     })
   
@@ -168,7 +163,7 @@ function pagar() {
       title: 'La fecha de caducidad no es válida',
       icon: 'error',
       confirmButtonText: "OK",
-      confirmButtonColor: "light purple",
+      confirmButtonColor: "red",
       timer: 2500,
     })
   } else if (CVV.value.length != 3 || isNaN(parseInt(CVV.value))){
@@ -176,7 +171,7 @@ function pagar() {
       title: 'El código de seguridad de la tarjeta no es válido',
       icon: 'error',
       confirmButtonText: "OK",
-      confirmButtonColor: "light purple",
+      confirmButtonColor: "red",
       timer: 2500,
     })
     
@@ -190,19 +185,19 @@ function pagar() {
         title: 'No hay nada en el carrito',
         icon: 'error',
         confirmButtonText: "OK",
-        confirmButtonColor: "light purple",
+        confirmButtonColor: "red",
         timer: 2500,
       })
     }else{
       vaciar()
       subtotalOffcanvas.innerHTML=''
       Swal.fire({
-        title: 'Usted ha pagado!',
-        text: `Gracias por su compra`,
+        title: 'Se ha realizado la compra',
+        text: `Muchas Gracias por comprar en nuestra tienda, en breve nos pondremos en contacto.`,
         icon: 'success',
         confirmButtonText: "OK",
         confirmButtonColor: "light purple",
-        timer: 2500,
+        timer: 3500,
       })
       mostrarCarrito()
       calcularSubtotal()
@@ -216,7 +211,7 @@ function pagar() {
       title: 'El email no es correcto',
       icon: 'error',
       confirmButtonText: "OK",
-      confirmButtonColor: "light purple",
+      confirmButtonColor: "red",
       timer: 2500,
     })
 		return false;
