@@ -1,0 +1,223 @@
+[
+    {
+       "id": 10001,
+       "nombre": "Jardin 20L",
+       "marca": "Terrafertil",
+       "categoria": "Sustratos",
+       "detalle": "Tierra Negra enriquecida con compost orgánico.",
+       "precio": 800,
+       "imagen": "jardin.jpg"
+    },
+    {
+        "id": 20002,
+        "nombre": "Plantas de Interior 10L",
+        "marca": "Terrafertil",
+        "categoria": "Sustratos",
+        "detalle": "Evita la compactación favoreciendo la aireación, el desarrollo de raíces.",
+        "precio": 520,
+        "imagen": "interior.jpg"
+     },
+     {
+        "id": 30003,
+        "nombre": "Perlita 5L",
+        "marca": "Bertinat",
+        "categoria": "Sustratos",
+        "detalle": "Aumenta la porosidad, la aireación y aliviana la mezcla.",
+        "precio": 500,
+        "imagen": "perlita.jpg"
+     },
+     {
+        "id": 40004,
+        "nombre": "Pometina 5L",
+        "marca": "Bertinat",
+        "categoria": "Sustratos",
+        "detalle": "Facilita el drenaje.",
+        "precio": 350,
+        "imagen": "pometina.jpg"
+     },
+     {
+        "id": 50005,
+        "nombre": "Huertas 50L",
+        "marca": "Terrafertil",
+        "categoria": "Sustratos",
+        "detalle": "Permite un desarrollo rápido de las raíces.",
+        "precio": 2500,
+        "imagen": "huertas.jpg"
+     },
+     {
+        "id": 60006,
+        "nombre": "MultiPro Indoor 20L",
+        "marca": "Terrafertil",
+        "categoria": "Sustratos",
+        "detalle": "Se adapta a distintos tipos de contenedores.",
+        "precio": 1250,
+        "imagen": "growmix_indoor.jpg"
+     },
+     {
+        "id": 70007,
+        "nombre": "Trichoderma 30cc",
+        "marca": "EcoMambo",
+        "categoria": "Cuidado de las Plantas",
+        "detalle": "Fungicida de amplio espectro. Posee mecanismos para atacar y parasitar a otros hongos y así, aprovechar una fuente nutricional adicional.",
+        "precio": 910,
+        "imagen": "tricoEco.jpg"
+     },
+     {
+        "id": 80008,
+        "nombre": "Jabon potasico con neem y canela 100cc",
+        "marca": "EcoMambo",
+        "categoria": "Cuidado de las Plantas",
+        "detalle": "Insecticida biológico de procedencia vegetal.",
+        "precio": 900,
+        "imagen": "jabon_potasico.jpg"
+        
+     },
+     {
+        "id": 90009,
+        "nombre": "Veloxan Derribante 250cc",
+        "marca": "Glacoxan",
+        "categoria": "Cuidado de las Plantas",
+        "detalle": "Producto con poder de volteo, efecto de expulsión y repelencia. Es un concentrado emulsionable.",
+        "precio": 2200,
+        "imagen": "veloxan.png"
+     },
+     {
+        "id": 10010,
+        "nombre": "Mamboreta H 30cc",
+        "marca": "Mamboreta",
+        "categoria": "Cuidado de las Plantas",
+        "detalle": "Fungicida sistémico de suspensión concentrada, de amplio espectro.",
+        "precio":1080,
+        "imagen": "mamboreta_h.jpg"
+     },
+     {
+        "id": 11011,
+        "nombre": "Mamboreta D 60cc",
+        "marca": "Mamboreta",
+        "categoria": "Cuidado de las Plantas",
+        "detalle": "Insecticida sistémico foliar y de contacto.",
+        "precio": 1120,
+        "imagen": "mamboreta_d.jpg"
+     },
+     {
+        "id": 12012,
+        "nombre": "Hormiguicida 6g",
+        "marca": "GelTek",
+        "categoria": "Cuidado de las Plantas",
+        "detalle": "Hormiguicida en gel.",
+        "precio": 610,
+        "imagen": "hormis_jerin.png"
+     },
+     {
+        "id": 13013,
+        "nombre": "Nitrofull 1kg",
+        "marca": "Bertinat",
+        "categoria": "Fertilizantes",
+        "detalle": "Granulado, permite una disolución lenta con el riego.",
+        "precio": 890,
+        "imagen": "nitrofull.jpg"
+     },
+     {
+        "id": 14014,
+        "nombre": "Sulfato de Hierro 1kg",
+        "marca": "Bertinat",
+        "categoria": "Fertilizantes",
+        "detalle": "Granulado, corrige deficiencias de hierro.",
+        "precio": 890,
+        "imagen": "hierro.jpg"
+     },
+     {
+        "id": 15015,
+        "nombre": "Fertilizante organico natural 1kg",
+        "marca": "Guanito",
+        "categoria": "Fertilizantes",
+        "detalle": "Con alto contenido de materia orgánica activa y con macro y micro nutrientes.",
+        "precio": 1400,
+        "imagen": "guanito.jpg"
+     },
+     {
+        "id": 16016,
+        "nombre": "Humus solido puro de lombriz californiana 250g",
+        "marca": "EcoMambo",
+        "categoria": "Fertilizantes",
+        "detalle": "Favorece la porosidad del suelo, facilita el drenaje y la aireación, evita enfermedades y estimula el desarrollo radicular.",
+        "precio": 983,
+        "imagen": "humusEco.png"
+     },
+     {
+        "id": 17017,
+        "nombre": "Fertifox Potenciado 200cc",
+        "marca": "Fertifox",
+        "categoria": "Fertilizantes",
+        "detalle": "Liquido, ideal para plantas debilitadas (exterior e interior).",
+        "precio": 940,
+        "imagen": "fertifox_potenciado.jpg"
+        
+     },
+     {
+        "id": 18018,
+        "nombre": "Hormona de Enraizar en polvo 30g",
+        "marca": "Parque",
+        "categoria": "Fertilizantes",
+        "detalle": "Favorece el enraizamiento de plantas.",
+        "precio": 1800,
+        "imagen": "enraizar.jpg"
+     },
+     {
+        "id": 19019,
+        "nombre": "Pulverizador 1L",
+        "marca": "Midori",
+        "categoria": "Accesorios",
+        "detalle": "Pulverizador a gatillo.",
+        "precio": 490,
+        "imagen": "pulverizador.jpg"
+     },  
+     {
+        "id": 20020,
+        "nombre": "Pala de mano",
+        "marca": "Varios",
+        "categoria": "Accesorios",
+        "detalle": "Pala de mano reforzada, fabricada en acero de 1,3 mm de espesor.",
+        "precio": 1500,
+        "imagen": "pala_reforzada.png"
+        
+     },
+     {
+        "id": 21021,
+        "nombre": "Tijera de poda",
+        "marca": "Gardena",
+        "categoria": "Accesorios",
+        "detalle": "Tijera de jardín con una cuchilla superior con capa antiadherente y una cuchilla inferior en acero inoxidable.",
+        "precio": 10900,
+        "imagen": "gardena.png"
+     },
+     {
+        "id": 22022,
+        "nombre": "Regadera 10L",
+        "marca": "Matri",
+        "categoria": "Accesorios",
+        "detalle": "Regaderas fabricadas en plástico inyectado.",
+        "precio": 1950,
+        "imagen": "regadera.jpg"
+     },
+     {
+        "id": 23023,
+        "nombre": "Barrera anti hormigas",
+        "marca": "Varios",
+        "categoria": "Accesorios",
+        "detalle": "Contine una tira de 1 m lineal.",
+        "precio": 530,
+        "imagen": "hormi_muralla.jpg"
+     },
+     {
+        "id": 24024,
+        "nombre": "Pulverizador 1.5L",
+        "marca": "Giber",
+        "categoria": "Accesorios",
+        "detalle": "Son apropiados para trabajar en interiores, balcones, terrazas o pequeños jardines.",
+        "precio": 4800,
+        "imagen": "pulverizador_giber.jpg"
+     }
+    
+       
+]

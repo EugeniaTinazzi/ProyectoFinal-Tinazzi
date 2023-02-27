@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+  <title>WEBSHOP</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index2.html">Vivero Midori</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li id="verCuidado"><a>Cuidado de las Plantas</a></li>
+          <li id="verFertilizantes"><a>Fertilizantes</a></li>
+          <li id="verSustratos"><a>Sustratos</a></li>
+          <li id="verAccesorios"><a>Accesorios</a></li>
+          <li id="verTodos"> <a>Ver todo</a></li>
+          <li><a href="#carritoDeCompras">CARRITO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- WELCOME -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">BIENVENIDOS A NUESTRA TIENDA</h1>
+      <p class="lead">Aqui vas a encontrar todo lo que necesitas para tu jardín.</p>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/plantas1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/plantas2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/plantas3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+
+  <!-- CARDS PRODUCTOS -->
+  <div class="container">
+    <div id="mostrarProductos" class="row justify-content-around gx-5">
+    </div>
+  </div>
+
+
+  <!-- CARRITO -->
+  <h3 id="tituloCarrito">CARRITO DE COMPRAS</h3>
+
+  <table class="table container">
+    <thead>
+      <tr>
+        <th scope="col-1"></th>
+        <th scope="col-9"></th>
+        <th scope="col-1"></th>
+        <th scope="col-1"></th>
+      </tr>
+    </thead>
+    <tbody id="carritoDeCompras">
+
+      <!-- Productos en el carrito -->
+
+    </tbody>
+  </table>
+
+  <div id="totalCarrito">
+  </div>
+
+  <!-- botones -->
+  <div class="container d-flex justify-content-around">
+    <button class="btn btnFinalizarCompra" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight" id="FinalizarCompra">FINALIZAR COMPRA</button>
+
+    <button class="btn btnVaciarCarrito" type="button" id="vaciarCarrito">VACIAR CARRITO</button>
+  </div>
+
+  <!-- FINALIZAR COMPRA -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">FINALIZAR COMPRA</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="showProduct">
+      </div>
+      <div id="formularioDePago">
+        <form action="" id="formPago">
+          <div class="mb-3">
+            <p class="dis fw-bold mb-2">Nombre y Apellido</p>
+            <input class="form-control" type="text" placeholder="Luke Skywalker">
+          </div>
+          <div class="mb-3">
+            <p class="dis fw-bold mb-2">Email address</p>
+            <input class="form-control" type="email" placeholder="Ingrese un Email" id="emailField">
+          </div>
+          <div class="mb-3">
+            <p class="dis fw-bold mb-2">Teléfono</p>
+            <input class="form-control" type="teléfono" placeholder="4293-1234">
+          </div>
+          <div>
+            <p class="dis fw-bold mb-2">Tarjeta de Credito / Debito</p>
+            <div class="d-flex align-items-center justify-content-between card-atm border rounded">
+              <input type="number" class="form-control" placeholder="Tarjeta de Credito" id="tarjetaCredito">
+              <div class="d-flex w-50">
+                <input type="number" class="form-control px-0" placeholder="MM/YY" id="caducidadTarjeta">
+                <input type="number" maxlength=3 class="form-control px-0" placeholder="CVV" id="CVV">
+              </div>
+            </div>
+            <div class="my-3 cardname">
+              <p class="dis fw-bold mb-2">Nombre como figura en la tarjeta</p>
+              <input class="form-control" type="text">
+            </div>
+            <div class="address">
+              <p class="dis fw-bold mb-3">Dirección de envio</p>
+              <div>
+                <input class="form-control zip" type="text" placeholder="Calle">
+                <input class="form-control state" type="text" placeholder="Número">
+                <input class="form-control state" type="text" placeholder="Departamento (Opcional)">
+                <input class="form-control state" type="text" placeholder="Barrio (Opcional)">
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Adrogué</option>
+                <option value="1">Glew</option>
+                <option value="2">Longchamps</option>
+                <option value="3">Guernica</option>
+                <option value="3">Burzaco</option>
+                <option value="3">Temperley</option>
+                <option value="3">Lomas de Zamora</option>
+              </select>
+              <div class=" my-3">
+                <p class="dis fw-bold mb-2">CUIT / CUIL</p>
+                <div class="inputWithcheck">
+                  <input class="form-control" type="text" placeholder="12-12345678-1">
+                </div>
+              </div>
+              <div class="d-flex flex-column dis" id="subtotalOffcanvas">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer class="text-center text-lg-start bg-light text-muted footerWeb">
+    
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Vivero Midori
+            </h6>
+            <p>
+              Vas a encontrar lo que necesitas para decorar tu jardín.
+            </p>
+
+            <a href="https://www.facebook.com/ViveroMidoriAdrogue" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://goo.gl/maps/8FxqY5R3PQUbxAhYA" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.instagram.com/vivero.midori" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#top" id="irTop" class="me-4 text-reset">
+              ^
+            </a>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p><i class="fas fa-home me-3"></i> Av. Hipólito Yrigoyen 13.596, Adrogué, Alte. Brown - Buenos Aires</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@viveromidori.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 011 4293 7946</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(87, 133, 121, 0.301);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://www.linkedin.com/in/em-tinazzi" target="_blank">EMTinazzi</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- SWEET ALERT-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- JS -->
+  <script src="./JS/productos.js"></script>
+  <script src="./JS/main.js"></script>
+  <script src="./JS/carrito.js"></script>
+
+</body>
+
+</html>
